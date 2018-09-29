@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="co.codemaestro.implicitintents">
-    <uses-feature android:name="android.hardware.camera"
-        android:required="true" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--<uses-feature android:name="android.hardware.camera"-->
+        <!--android:required="true" />-->
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
 
 
     <application
@@ -19,16 +19,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <provider
-            android:name="android.support.v4.content.FileProvider"
-            android:authorities="co.codemaestro.implicitintents.fileprovider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths"
-            />
-        </provider>
     </application>
 
 </manifest>
